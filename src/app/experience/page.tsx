@@ -19,7 +19,7 @@ const timelineEvents: TimelineEvent[] = [
       />
     ),
     icon: <Building size={30} />,
-    title: "Software Engineer",
+    title: "Software Engineer Intern",
     subtitle: "School on Cloud Pte. Ltd.",
     link: "https://schooloncloud.asia",
     timeline: "Mar 2024 - Present",
@@ -98,12 +98,14 @@ const timelineEvents: TimelineEvent[] = [
   },
   {
     logo: (
-      <Image
-        src={"/experience/mysfit.png"}
-        alt={"Mysfit"}
-        width={40}
-        height={40}
-      />
+      <div className="rounded bg-foreground p-1 dark:bg-transparent">
+        <Image
+          src={"/experience/mysfit.png"}
+          alt={"Mysfit"}
+          width={40}
+          height={40}
+        />
+      </div>
     ),
     icon: <Building size={30} />,
     title: "Full Stack Developer",

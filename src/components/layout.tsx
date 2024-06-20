@@ -2,13 +2,14 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "./ui/sheet";
-import { Building, GraduationCap, Rocket } from "lucide-react";
+import { Building, GraduationCap, Menu, Rocket } from "lucide-react";
 import { ThemeSwitcher } from "./theme/theme-switcher";
 
 type NavLink = {
@@ -72,7 +73,7 @@ export default function MainLayout({
       </div>
       <Sheet>
         <header className="sticky top-0 z-50 px-2 pt-2">
-          <nav className="rounded-full border bg-background/50 px-4 py-2 backdrop-blur-md transition duration-200 ease-in-out">
+          <nav className="rounded-full border bg-background/80 px-4 py-2 backdrop-blur-md transition duration-200 ease-in-out">
             <div className="flex items-center justify-between">
               <Link href="/" className="text-green font-bold">
                 Johnny Lin
@@ -98,13 +99,13 @@ export default function MainLayout({
                 <SheetTrigger asChild>
                   <Button
                     variant="greenOutline"
-                    size={"sm"}
+                    size={"icon"}
                     className="rounded-full"
                   >
-                    Open
+                    <Menu size={16} />
                   </Button>
                 </SheetTrigger>
-                <SheetContent className="mr-2 mt-20 rounded-xl border bg-background/50 backdrop-blur-md transition duration-200 ease-in-out">
+                <SheetContent className="mr-2 mt-20 rounded-xl border bg-background/80 backdrop-blur-md transition duration-200 ease-in-out">
                   <SheetHeader>
                     <SheetTitle className="text-left">
                       Check Out Other Pages!
@@ -112,18 +113,20 @@ export default function MainLayout({
                   </SheetHeader>
                   <nav className="mt-4 flex flex-col space-y-2">
                     {navLinks.map((navLink, index) => (
-                      <Button
-                        asChild
-                        key={index}
-                        size={"sm"}
-                        className="justify-start rounded-full"
-                        variant={"greenOutline"}
-                      >
-                        <Link href={navLink.href} className="space-x-1">
-                          {navLink.icon}
-                          <p>{navLink.label}</p>
-                        </Link>
-                      </Button>
+                      <SheetClose asChild>
+                        <Button
+                          asChild
+                          key={index}
+                          size={"sm"}
+                          className="justify-start rounded-full"
+                          variant={"greenOutline"}
+                        >
+                          <Link href={navLink.href} className="space-x-1">
+                            {navLink.icon}
+                            <p>{navLink.label}</p>
+                          </Link>
+                        </Button>
+                      </SheetClose>
                     ))}
                   </nav>
                   <SheetFooter className="mt-4 flex flex-row items-center justify-start gap-4">
@@ -134,7 +137,7 @@ export default function MainLayout({
             </div>
           </nav>
         </header>
-        <main className="centerWidth marginY-full z-0 flex-grow">
+        <main className="centerWidth marginY-full z-0 h-full flex-grow">
           {children}
         </main>
         <footer className="z-50 px-2 pb-2">
