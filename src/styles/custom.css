@@ -1,0 +1,23 @@
+.leftMargin {
+  @apply ml-4 md:ml-16 lg:ml-40;
+}
+
+.rightMargin {
+  @apply mr-4 md:mr-16 lg:mr-40;
+}
+
+.fullWidth {
+  @apply -mx-4 md:-mx-16 lg:-mx-40;
+}
+
+.centerWidth {
+  @apply leftMargin rightMargin;
+}
+
+.marginY-full {
+  @apply my-4;
+}
+
+.marginY-0 {
+  @apply -my-4;
+}

@@ -1,0 +1,72 @@
+.h1 {
+  @apply text-3xl font-bold;
+}
+
+.h2 {
+  @apply text-2xl font-bold;
+}
+
+.h3 {
+  @apply text-2xl font-semibold;
+}
+
+.h4 {
+  @apply text-xl font-semibold;
+}
+
+.h5 {
+  @apply text-xl font-medium;
+}
+
+.h6 {
+  @apply text-lg font-medium;
+}
+
+.prose {
+  @apply space-y-2;
+}
+
+.prose h1 {
+  @apply h1;
+}
+
+.prose h2 {
+  @apply h2;
+}
+
+.prose h3 {
+  @apply h3;
+}
+
+.prose h4 {
+  @apply h4;
+}
+
+.prose h5 {
+  @apply h5;
+}
+
+.prose h6 {
+  @apply h6;
+}
+
+.prose ol {
+  @apply ml-4 max-w-fit list-outside list-decimal text-left;
+}
+
+.prose ul {
+  @apply ml-4 list-outside list-disc;
+}
+
+.prose table {
+  @apply w-full table-fixed border-collapse border;
+}
+
+.prose table th,
+.prose table td {
+  @apply border p-1;
+}
+
+.prose a {
+  @apply text-blue-500 underline;
+}
