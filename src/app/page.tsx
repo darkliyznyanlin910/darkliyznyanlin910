@@ -18,13 +18,13 @@ export default async function Home() {
           </div>
           <div className="flex-grow space-y-2">
             <h1 className="h1">
-              Hi I'm <span className="text-green">Johnny Lin</span>,
+              Hi I&apos;m <span className="text-green">Johnny Lin</span>,
             </h1>
             <p>
               Thank you for visiting my portfolio website! I am currently
               studying Information Systems in Singapore Management University
               (SMU). To learn more about my qualifications and experience, you
-              can explore other sections in my website, and don't forget to
+              can explore other sections in my website, and don&apos;t forget to
               download my resume to see what I can offer. Thank you!
             </p>
             <div className="flex items-center justify-start gap-2">

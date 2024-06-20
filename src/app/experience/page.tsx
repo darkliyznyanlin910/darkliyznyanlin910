@@ -1,5 +1,5 @@
-import { CustomTimeline, TimelineEvent } from "@/components/Timeline";
-import { Building, GraduationCap, Rocket } from "lucide-react";
+import { CustomTimeline, type TimelineEvent } from "@/components/Timeline";
+import { Building } from "lucide-react";
 import Image from "next/image";
 
 const timelineEvents: TimelineEvent[] = [
@@ -76,8 +76,8 @@ const timelineEvents: TimelineEvent[] = [
         </li>
         <li>
           Devised and published a{" "}
-          <span className="text-green">private NPM package</span> for users' IoT
-          devices to connect to Osiris Platform.
+          <span className="text-green">private NPM package</span> for
+          users&apos; IoT devices to connect to Osiris Platform.
         </li>
         <li>
           Wrote <span className="text-green">technical documentation</span> to

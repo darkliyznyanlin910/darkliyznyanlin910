@@ -1,4 +1,4 @@
-import { CustomTimeline, TimelineEvent } from "@/components/Timeline";
+import { CustomTimeline, type TimelineEvent } from "@/components/Timeline";
 import { GraduationCap } from "lucide-react";
 import Image from "next/image";
 
@@ -77,7 +77,7 @@ const timelineEvents: TimelineEvent[] = [
         </li>
         <li>
           Elected into <span className="text-green">Publicity Department</span>{" "}
-          for Singapore Polytechnic International Students' Club (SPISC) in
+          for Singapore Polytechnic International Students&apos; Club (SPISC) in
           2021.
         </li>
         <li>
@@ -88,8 +88,8 @@ const timelineEvents: TimelineEvent[] = [
         </li>
         <li>
           <span className="text-green">Chairperson</span> in collaborating with
-          Temasek Polytechnic International Students' Group and organized an
-          inter-poly bonding event for 200 participants.
+          Temasek Polytechnic International Students&apos; Group and organized
+          an inter-poly bonding event for 200 participants.
         </li>
       </ul>
     ),

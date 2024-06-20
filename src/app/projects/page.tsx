@@ -67,7 +67,7 @@ export default function Projects() {
               <li>
                 Devised and published a{" "}
                 <span className="text-green">private NPM package</span> for
-                users' IoT devices to connect to Osiris Platform.
+                users&apos; IoT devices to connect to Osiris Platform.
               </li>
               <li>
                 Wrote{" "}
@@ -133,19 +133,21 @@ export default function Projects() {
         >
           <div>
             <p>
-              Welcome to my portfolio website! One day, I realized that I didn't
-              have a consolidated platform to showcase my work, so I embarked on
-              this personal project. It has been an exciting opportunity for me
-              to explore and implement cutting-edge technologies like{" "}
+              Welcome to my portfolio website! One day, I realized that I
+              didn&apos;t have a consolidated platform to showcase my work, so I
+              embarked on this personal project. It has been an exciting
+              opportunity for me to explore and implement cutting-edge
+              technologies like{" "}
               <span className="text-green">
                 Incremental Static Regeneration (ISR)
               </span>{" "}
               and <span className="text-green">Edge Functions from Vercel</span>
               . With ISR, my website loads blazingly fast, ensuring a seamless
               user experience, while Edge Functions allow me to add dynamic
-              functionality to my static website. I'm proud to share my journey
-              and the projects I've worked on through this website, and I hope
-              you enjoy exploring them as much as I enjoyed building them!
+              functionality to my static website. I&apos;m proud to share my
+              journey and the projects I&apos;ve worked on through this website,
+              and I hope you enjoy exploring them as much as I enjoyed building
+              them!
             </p>
           </div>
         </ProjectCard>
