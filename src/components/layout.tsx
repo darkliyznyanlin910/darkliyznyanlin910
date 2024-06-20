@@ -113,10 +113,9 @@ export default function MainLayout({
                   </SheetHeader>
                   <nav className="mt-4 flex flex-col space-y-2">
                     {navLinks.map((navLink, index) => (
-                      <SheetClose asChild>
+                      <SheetClose asChild key={index}>
                         <Button
                           asChild
-                          key={index}
                           size={"sm"}
                           className="justify-start rounded-full"
                           variant={"greenOutline"}
