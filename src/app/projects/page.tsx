@@ -3,8 +3,8 @@ import Image from "next/image";
 import type { Metadata } from "next/types";
 
 export const metadata: Metadata = {
-  title: "Projects",
-  description: "Johnny Lin | Projects",
+  title: "Projects | Johnny Lin's Portfolio",
+  description: "Here are some of the projects I have worked on!",
 };
 
 export default function Projects() {

@@ -1,6 +1,12 @@
 import { CustomTimeline, type TimelineEvent } from "@/components/Timeline";
 import { Building } from "lucide-react";
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Experience | Johnny Lin's Portfolio",
+  description: "Here are some of the experiences I have had!",
+};
 
 const timelineEvents: TimelineEvent[] = [
   {
