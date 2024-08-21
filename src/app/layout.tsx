@@ -7,6 +7,7 @@ import { GeistSans } from "geist/font/sans";
 import { TRPCReactProvider } from "@/trpc/react";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import MainLayout from "@/components/layout";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata = {
   title: "Johnny Lin's Portfolio",
@@ -33,6 +34,7 @@ export default function RootLayout({
           </TRPCReactProvider>
         </ThemeProvider>
       </body>
+      <GoogleAnalytics gaId="G-11WT891P5R" />
     </html>
   );
 }
