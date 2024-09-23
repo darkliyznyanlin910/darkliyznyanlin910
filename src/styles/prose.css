@@ -70,3 +70,11 @@
 .prose a {
   @apply text-blue-500 underline;
 }
+
+.prose pre {
+  @apply rounded-lg border p-4;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-green pl-2;
+}

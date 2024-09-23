@@ -9,7 +9,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "./ui/sheet";
-import { Building, GraduationCap, Menu, Rocket } from "lucide-react";
+import { Book, Building, GraduationCap, Menu, Rocket } from "lucide-react";
 import { ThemeSwitcher } from "./theme/theme-switcher";
 
 type NavLink = {
@@ -33,6 +33,11 @@ const navLinks: NavLink[] = [
     href: "/experience",
     label: "Experience",
     icon: <Building size={16} />,
+  },
+  {
+    href: "/blog",
+    label: "Blogs",
+    icon: <Book size={16} />,
   },
 ];
 
@@ -75,7 +80,7 @@ export default function MainLayout({
         <header className="sticky top-0 z-50 px-2 pt-2">
           <nav className="rounded-full border bg-background/80 px-4 py-2 backdrop-blur-md transition duration-200 ease-in-out">
             <div className="flex items-center justify-between">
-              <Link href="/" className="text-green font-bold">
+              <Link href="/" className="font-bold text-green">
                 Johnny Lin
               </Link>
               <div className="hidden items-center space-x-2 md:flex">
