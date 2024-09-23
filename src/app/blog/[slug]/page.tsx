@@ -7,7 +7,7 @@ export interface Props {
   params: { slug: string };
 }
 
-export const revalidate = Infinity;
+export const revalidate = 3600;
 
 export default async function BlogPost({ params }: Props) {
   const blog = await api.blog.getOne({ slug: params.slug });

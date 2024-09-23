@@ -72,9 +72,13 @@
 }
 
 .prose pre {
-  @apply rounded-lg border p-4;
+  @apply max-w-[100dvw] overflow-x-scroll rounded-lg border p-4;
 }
 
 .prose blockquote {
   @apply border-l-4 border-green pl-2;
+}
+
+.prose code:not(.shiki code) {
+  @apply rounded border border-muted-foreground bg-muted p-0.5 text-sm;
 }
