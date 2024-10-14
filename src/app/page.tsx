@@ -30,7 +30,7 @@ export default async function Home() {
             <Button variant={"green"} size={"sm"}>
               <Link
                 href={
-                  "https://knl-personal-bucket.s3.ap-southeast-1.amazonaws.com/KaungNyanLin_Resume.pdf"
+                  "https://knl-personal.s3.ap-southeast-1.amazonaws.com/KaungNyanLin_Resume.pdf"
                 }
                 target="_blank"
               >
