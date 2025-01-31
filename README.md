@@ -1,5 +1,5 @@
 # 💫 About Me:
-💻  I'm currently working on full-stack applications for external clients.<br>📝  I'm currently learning Solution Architecture and AWS Cloud Development Kit.<br>💬  Ask me about cloud services.<br>🌎 I'm working on open-source initiative from [Ellipsis](https://ellipsis.computing.smu.edu.sg), School of Computing and Information System Society in Singapore Management University.
+💻  I'm currently working on full-stack applications for external clients.<br>📝  I'm currently learning Solution Architecture and AWS Cloud Development Kit.<br>💬  Ask me about cloud services.<br>🌎 I'm working on open-source initiative from [Ellipsis](https://ellipsis.computing.smu.edu.sg/open-source), School of Computing and Information System Society in Singapore Management University.
 
 
 ## 🌐 Socials:
