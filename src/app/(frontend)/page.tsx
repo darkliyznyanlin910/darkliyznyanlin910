@@ -63,27 +63,12 @@ export default async function HomePage() {
     <main className="flex-1">
       {/* Hero Section */}
       <section className="container pt-16 pb-12 md:pt-24 md:pb-16">
-        <div className="max-w-2xl">
-          {/* Avatar */}
-          {profileImageUrl && (
-            <div className="mb-6">
-              <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-primary/50">
-                <Image
-                  src={profileImageUrl}
-                  alt={siteSettings.fullName || 'Profile'}
-                  width={64}
-                  height={64}
-                  className="object-cover w-full h-full"
-                  priority
-                />
-              </div>
-            </div>
-          )}
-
-          {/* Heading */}
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-            Hello, I&apos;m <span className="text-primary">{siteSettings.name || 'Johnny'}</span>.
-          </h1>
+        <div className="flex items-start justify-between gap-6">
+          <div className="flex-1 min-w-0">
+            {/* Heading */}
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+              Hello, I&apos;m <span className="text-primary">{siteSettings.name || 'Johnny'}</span>.
+            </h1>
 
           {/* Subtitle */}
           {siteSettings.subtitle && (
@@ -144,6 +129,23 @@ export default async function HomePage() {
               </Link>
             )}
           </div>
+          </div>
+
+          {/* Avatar */}
+          {profileImageUrl && (
+            <div className="shrink-0 hidden sm:block">
+              <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-primary/50">
+                <Image
+                  src={profileImageUrl}
+                  alt={siteSettings.fullName || 'Profile'}
+                  width={80}
+                  height={80}
+                  className="object-cover w-full h-full"
+                  priority
+                />
+              </div>
+            </div>
+          )}
         </div>
       </section>
 

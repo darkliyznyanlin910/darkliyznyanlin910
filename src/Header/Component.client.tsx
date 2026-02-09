@@ -1,8 +1,7 @@
 'use client'
-import { useHeaderTheme } from '@/providers/HeaderTheme'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 import type { Header } from '@/payload-types'
 
@@ -27,19 +26,7 @@ interface HeaderClientProps {
 }
 
 export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
-  const [theme, setTheme] = useState<string | null>(null)
-  const { headerTheme, setHeaderTheme } = useHeaderTheme()
   const pathname = usePathname()
-
-  useEffect(() => {
-    setHeaderTheme(null)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pathname])
-
-  useEffect(() => {
-    if (headerTheme && headerTheme !== theme) setTheme(headerTheme)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [headerTheme])
 
   const navItems = data?.navItems || []
 
@@ -65,7 +52,6 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
     <nav
       className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-1 px-3 py-2 rounded-full border border-primary/30 bg-background/80 backdrop-blur-xl shadow-[0_0_15px_rgba(var(--primary),0.15),0_0_30px_rgba(var(--primary),0.08)]"
       style={{ boxShadow: '0 0 15px color-mix(in oklch, var(--primary) 20%, transparent), 0 0 40px color-mix(in oklch, var(--primary) 10%, transparent)' }}
-      {...(theme ? { 'data-theme': theme } : {})}
     >
       {links.map(({ href, label, icon: Icon }) => {
         const isActive = pathname === href

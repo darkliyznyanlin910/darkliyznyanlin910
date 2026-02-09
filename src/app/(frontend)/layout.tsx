@@ -27,7 +27,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <link href="/favicon.svg" rel="icon" type="image/svg+xml" />
       </head>
       <body>
-        <div className="fixed inset-0 -z-10 h-full w-full [background:radial-gradient(125%_125%_at_50%_10%,var(--background)_40%,color-mix(in_oklch,var(--primary)_30%,transparent)_100%)]" />
+        <div className="fixed inset-0 -z-10 h-full w-full bg-background" />
         <Providers>
           <AdminBar
             adminBarProps={{
