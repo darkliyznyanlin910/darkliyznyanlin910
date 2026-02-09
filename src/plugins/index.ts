@@ -40,7 +40,7 @@ export const plugins: Plugin[] = [
       },
       region: process.env.S3_REGION || 'us-east-1',
       endpoint: process.env.S3_ENDPOINT,
-      forcePathStyle: true,
+      forcePathStyle: process.env.S3_FORCE_PATH_STYLE === 'true',
     },
   }),
   redirectsPlugin({
