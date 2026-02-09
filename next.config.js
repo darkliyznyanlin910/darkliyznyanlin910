@@ -1,14 +1,39 @@
-/**
- * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially useful
- * for Docker builds.
- */
-await import("./src/env.js");
+import { withPayload } from '@payloadcms/next/withPayload'
 
-/** @type {import("next").NextConfig} */
-const config = {
+import redirects from './redirects.js'
+
+const NEXT_PUBLIC_SERVER_URL = process.env.VERCEL_PROJECT_PRODUCTION_URL
+  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  : undefined || process.env.__NEXT_PRIVATE_ORIGIN || 'http://localhost:3000'
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   images: {
-    remotePatterns: [{ hostname: "images.ctfassets.net" }],
-  },
-};
+    remotePatterns: [
+      ...[NEXT_PUBLIC_SERVER_URL /* 'https://example.com' */].map((item) => {
+        const url = new URL(item)
 
-export default config;
+        return {
+          hostname: url.hostname,
+          protocol: url.protocol.replace(':', ''),
+        }
+      }),
+    ],
+  },
+  webpack: (webpackConfig) => {
+    webpackConfig.resolve.extensionAlias = {
+      '.cjs': ['.cts', '.cjs'],
+      '.js': ['.ts', '.tsx', '.js', '.jsx'],
+      '.mjs': ['.mts', '.mjs'],
+    }
+
+    return webpackConfig
+  },
+  reactStrictMode: true,
+  redirects,
+  outputFileTracingIncludes: {
+    '/next/seed': ['./src/endpoints/seed/seed-data.json', './src/endpoints/seed/media/**/*'],
+  },
+}
+
+export default withPayload(nextConfig, { devBundleServerPackages: false })

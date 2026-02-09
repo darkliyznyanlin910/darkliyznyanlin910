@@ -1,0 +1,1527 @@
+{
+  "media": [
+    {
+      "id": 7,
+      "alt": null,
+      "caption": null,
+      "folder": null,
+      "updatedAt": "2026-02-08T06:59:41.847Z",
+      "createdAt": "2026-02-08T06:59:41.779Z",
+      "url": "/api/media/file/sp.png",
+      "thumbnailURL": null,
+      "filename": "sp.png",
+      "mimeType": "image/png",
+      "filesize": 1032,
+      "width": 76,
+      "height": 50,
+      "focalX": 17,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "square": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "small": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "medium": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "large": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "xlarge": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "og": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        }
+      }
+    },
+    {
+      "id": 5,
+      "alt": null,
+      "caption": null,
+      "folder": null,
+      "updatedAt": "2026-02-08T06:54:58.403Z",
+      "createdAt": "2026-02-08T06:54:58.377Z",
+      "url": "/api/media/file/osiris.webp",
+      "thumbnailURL": null,
+      "filename": "osiris.webp",
+      "mimeType": "image/webp",
+      "filesize": 920,
+      "width": 96,
+      "height": 96,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "square": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "small": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "medium": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "large": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "xlarge": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "og": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        }
+      }
+    },
+    {
+      "id": 4,
+      "alt": null,
+      "caption": null,
+      "folder": null,
+      "updatedAt": "2026-02-08T06:54:15.516Z",
+      "createdAt": "2026-02-08T06:54:15.477Z",
+      "url": "/api/media/file/smu.png",
+      "thumbnailURL": null,
+      "filename": "smu.png",
+      "mimeType": "image/png",
+      "filesize": 33805,
+      "width": 188,
+      "height": 268,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "square": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "small": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "medium": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "large": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "xlarge": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "og": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        }
+      }
+    },
+    {
+      "id": 3,
+      "alt": null,
+      "caption": null,
+      "folder": null,
+      "updatedAt": "2026-02-08T06:50:48.185Z",
+      "createdAt": "2026-02-08T06:50:48.135Z",
+      "url": "/api/media/file/soc.jpeg",
+      "thumbnailURL": null,
+      "filename": "soc.jpeg",
+      "mimeType": "image/jpeg",
+      "filesize": 10907,
+      "width": 200,
+      "height": 200,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "square": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "small": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "medium": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "large": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "xlarge": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "og": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        }
+      }
+    },
+    {
+      "id": 2,
+      "alt": null,
+      "caption": null,
+      "folder": null,
+      "updatedAt": "2026-02-08T06:48:36.130Z",
+      "createdAt": "2026-02-08T06:48:36.101Z",
+      "url": "/api/media/file/ledgernow.webp",
+      "thumbnailURL": null,
+      "filename": "ledgernow.webp",
+      "mimeType": "image/webp",
+      "filesize": 2348,
+      "width": 192,
+      "height": 192,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "square": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "small": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "medium": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "large": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "xlarge": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "og": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        }
+      }
+    },
+    {
+      "id": 1,
+      "alt": null,
+      "caption": null,
+      "folder": null,
+      "updatedAt": "2026-02-08T06:44:56.942Z",
+      "createdAt": "2026-02-08T06:44:56.874Z",
+      "url": "/api/media/file/voltade.png",
+      "thumbnailURL": "/api/media/file/voltade-300x300.png",
+      "filename": "voltade.png",
+      "mimeType": "image/png",
+      "filesize": 122061,
+      "width": 1024,
+      "height": 1024,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": "/api/media/file/voltade-300x300.png",
+          "width": 300,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 34847,
+          "filename": "voltade-300x300.png"
+        },
+        "square": {
+          "url": "/api/media/file/voltade-500x500.png",
+          "width": 500,
+          "height": 500,
+          "mimeType": "image/png",
+          "filesize": 60981,
+          "filename": "voltade-500x500.png"
+        },
+        "small": {
+          "url": "/api/media/file/voltade-600x600.png",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/png",
+          "filesize": 76946,
+          "filename": "voltade-600x600.png"
+        },
+        "medium": {
+          "url": "/api/media/file/voltade-900x900.png",
+          "width": 900,
+          "height": 900,
+          "mimeType": "image/png",
+          "filesize": 125659,
+          "filename": "voltade-900x900.png"
+        },
+        "large": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "xlarge": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "og": {
+          "url": "/api/media/file/voltade-1200x630.png",
+          "width": 1200,
+          "height": 630,
+          "mimeType": "image/png",
+          "filesize": 90454,
+          "filename": "voltade-1200x630.png"
+        }
+      }
+    }
+  ],
+  "categories": [],
+  "experience": [
+    {
+      "id": 6,
+      "title": "Software Engineer Intern",
+      "company": "Autonomous Vehicle Project @ Singapore Polytechnic",
+      "link": null,
+      "startDate": "Mar 2022",
+      "endDate": "Sep 2022",
+      "logo": 7,
+      "description": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Improved autonomous navigation system to be more reliable.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Created better and more optimized 3D mapping software by combining data input from LiDARs and Inertial measurement unit.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Collaborated with other departments to create API Schema and Architecture.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": null
+        }
+      },
+      "order": 6,
+      "updatedAt": "2026-02-08T07:00:05.414Z",
+      "createdAt": "2026-02-08T06:30:21.710Z"
+    },
+    {
+      "id": 5,
+      "title": "Software Engineer",
+      "company": "Osiris.sg",
+      "link": "https://osiris.sg",
+      "startDate": "Aug 2023",
+      "endDate": "Mar 2024",
+      "logo": 5,
+      "description": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Designed Real-time MQTT communication schema for IoT Platform, supporting up to 10,000 concurrent connections.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Deployed a synchronized and multi-platform authentication system enabling seamless user login across 5 different platforms.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Devised and published a private NPM package for users' IoT devices to connect to Osiris Platform.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Wrote technical documentation and reduced onboarding process of new developers by 50%.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Led in production of new Workflows feature where users can built to business needs with building blocks provided.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": null
+        }
+      },
+      "order": 5,
+      "updatedAt": "2026-02-08T06:55:23.492Z",
+      "createdAt": "2026-02-08T06:30:21.705Z"
+    },
+    {
+      "id": 4,
+      "title": "Research Assistant",
+      "company": "Singapore Management University",
+      "link": null,
+      "startDate": "May 2024",
+      "endDate": "August 2024",
+      "logo": 4,
+      "description": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Conducted research alongside Prof. Keith Fwa Hua Leong in research Project on performing Code Analysis by leveraging on Large Language Models with Retrieval-augmented generation.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Deployed queue-based data processing pipeline in enterprise cloud environment and reduced batch processing time by 80%.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Liaised with security team to ensure security and compliance of PDPA policies.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": null
+        }
+      },
+      "order": 4,
+      "updatedAt": "2026-02-08T06:54:38.669Z",
+      "createdAt": "2026-02-08T06:30:21.697Z"
+    },
+    {
+      "id": 3,
+      "title": "Software Engineer Intern",
+      "company": "School on Cloud",
+      "link": "https://schooloncloud.asia",
+      "startDate": "Mar 2024",
+      "endDate": "Aug 2024",
+      "logo": 3,
+      "description": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Designed and implemented a robust video transcoding pipeline utilizing AWS services (e.g., S3, Lambda, Elastic Transcoder) and Terraform, enhancing media processing efficiency and scalability.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "-  Developed an extension for the Contentful platform, enhancing the existing Content Management System to support additional content types such as videos and e-commerce, thereby increasing platform versatility and ease of content management.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Developed a search engine-optimized video streaming website, achieving a 40% increase in user traffic by implementing responsive design and advanced SEO strategies.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": null
+        }
+      },
+      "order": 3,
+      "updatedAt": "2026-02-08T06:51:50.681Z",
+      "createdAt": "2026-02-08T06:30:21.693Z"
+    },
+    {
+      "id": 2,
+      "title": "Software Engineer Intern",
+      "company": "Ledger Now",
+      "link": null,
+      "startDate": "December 2024",
+      "endDate": "January 2025",
+      "logo": 2,
+      "description": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Engineered a microservice integrating AWS Bedrock and Google Vertex AI with a unified interface, enabling dynamic command-based UI interactions through LangChain.js.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Developed serverless OCR service using AWS Lambda and Express.js, integrating Google Cloud Vision API for high-accuracy document text extraction.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Implemented infrastructure-as-code using Terraform and GitLab CI for automated testing, containerized deployments, and AWS resource provisioning.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Designed modular provider system allowing seamless switching between LLM providers while maintaining consistent interfaces and test coverage above 80%.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": null
+        }
+      },
+      "order": 2,
+      "updatedAt": "2026-02-08T06:49:40.541Z",
+      "createdAt": "2026-02-08T06:30:21.690Z"
+    },
+    {
+      "id": 1,
+      "title": "Software Engineer Intern (Platform Engineering)",
+      "company": "Voltade",
+      "link": "https://voltade.com/infrastructure",
+      "startDate": "April 2025",
+      "endDate": "Present",
+      "logo": 1,
+      "description": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Contributed to opensource cloud-native ERP platform ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                },
+                {
+                  "type": "autolink",
+                  "fields": {
+                    "url": "https://github.com/voltade/os",
+                    "linkType": "custom"
+                  },
+                  "format": "",
+                  "indent": 0,
+                  "version": 2,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "https://github.com/voltade/os",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "mode": "normal",
+                  "text": ".",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Implemented network security measures and ACLs to safeguard critical systems and data.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Implemented in-house multi-tenent Authentication and JWT issuer to integrate with self-hosted single-tenent supabase instances.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Built a deployment pipeline to manage provisioning infrastructure with database as source-of-truth leveraging on ArgoCD Plugin Generators.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Engineered infrastructure to run micro applications to provision and deprovision based on usage.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": null
+        }
+      },
+      "order": 1,
+      "updatedAt": "2026-02-08T06:45:55.193Z",
+      "createdAt": "2026-02-08T06:30:21.684Z"
+    }
+  ],
+  "education": [
+    {
+      "id": 2,
+      "title": "Diploma in Computer Engineering",
+      "institution": "Singapore Polytechnic",
+      "link": "https://sp.edu.sg/",
+      "startDate": "Apr 2020",
+      "endDate": "Mar 2023",
+      "logo": 7,
+      "description": null,
+      "order": 2,
+      "updatedAt": "2026-02-08T07:00:37.701Z",
+      "createdAt": "2026-02-08T06:30:21.724Z"
+    },
+    {
+      "id": 1,
+      "title": "Bachelor of Science (Information Systems)",
+      "institution": "Singapore Management University",
+      "link": "https://computing.smu.edu.sg/bsc-information-systems",
+      "startDate": "Aug 2023",
+      "endDate": "May 2027",
+      "logo": 4,
+      "description": null,
+      "order": 1,
+      "updatedAt": "2026-02-08T07:00:50.016Z",
+      "createdAt": "2026-02-08T06:30:21.714Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": 4,
+      "title": "IS214 - Enterprise Solution Management",
+      "description": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Utilised Azure Kubernetes Service to make self-hosted Odoo resilient and scalable serving over 10,000 concurrent connections.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Implemented backups to AWS S3 and Cloudflare R2 for data resiliency and to facilitate disaster recovery strategies.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Implemented pipelines with Github Actions for automated CI/CD.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": null
+        }
+      },
+      "image": null,
+      "link": "https://github.com/darkliyznyanlin910/is214-esm",
+      "order": 4,
+      "updatedAt": "2026-02-08T07:04:43.145Z",
+      "createdAt": "2026-02-08T06:30:21.742Z"
+    },
+    {
+      "id": 3,
+      "title": "IS213 - Enterprise Solution Development",
+      "description": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Placed Top 4 teams in final round for Dell Cloud Native Award 2025.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Built microservice architecture with Saga pattern by making use of Temporal Orchestrator.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Utilised Kubernetes for solution to be cloud-native and scalable.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": null
+        }
+      },
+      "image": null,
+      "link": "https://github.com/darkliyznyanlin910/esd-2425T2",
+      "order": 3,
+      "updatedAt": "2026-02-08T07:04:25.385Z",
+      "createdAt": "2026-02-08T06:30:21.738Z"
+    },
+    {
+      "id": 2,
+      "title": "CS301 - IT Solution Architecture",
+      "description": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Architected AWS-first serverless architecture for CRM application for UBS.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Engineered serverless pipeline with Simple Queue Service and Lambda to process bank transaction messages.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Planned and built asynchronous logging system to record all changes in the CRM for auditing purposes.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": null
+        }
+      },
+      "image": null,
+      "link": "https://github.com/darkliyznyanlin910/itsa-2024-25t2",
+      "order": 2,
+      "updatedAt": "2026-02-08T07:03:10.815Z",
+      "createdAt": "2026-02-08T06:30:21.733Z"
+    },
+    {
+      "id": 1,
+      "title": "SMUMods",
+      "description": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Engineered a module prerequisite validation system leveraging directed acyclic graphs (DAG) to ensure proper course sequencing and graduation requirements.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Created a dynamic timetable planning system with conflict detection algorithms to validate class schedule compatibility across multiple terms.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Architected client-side state management using Zustand with middleware for persistence, enabling seamless user experience with faster module search by cutting down load time by 90%.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "- Implemented aggressive frontend caching strategy with version control, reducing server load by 90% through localStorage persistence and invalidation based on data versioning.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": null
+        }
+      },
+      "image": null,
+      "link": "https://smumods.sg",
+      "order": 1,
+      "updatedAt": "2026-02-08T07:01:49.971Z",
+      "createdAt": "2026-02-08T06:30:21.728Z"
+    }
+  ],
+  "pages": [],
+  "posts": [],
+  "forms": [],
+  "globals": {
+    "header": {
+      "id": 1,
+      "navItems": [
+        {
+          "id": "69882d7da3d9d30a047246c5",
+          "link": {
+            "type": "custom",
+            "newTab": null,
+            "url": "/projects",
+            "label": "Projects"
+          }
+        },
+        {
+          "id": "69882d7da3d9d30a047246c6",
+          "link": {
+            "type": "custom",
+            "newTab": null,
+            "url": "/education",
+            "label": "Education"
+          }
+        },
+        {
+          "id": "69882d7da3d9d30a047246c7",
+          "link": {
+            "type": "custom",
+            "newTab": null,
+            "url": "/experience",
+            "label": "Experience"
+          }
+        },
+        {
+          "id": "69882d7da3d9d30a047246c8",
+          "link": {
+            "type": "custom",
+            "newTab": null,
+            "url": "/posts",
+            "label": "Posts"
+          }
+        }
+      ],
+      "updatedAt": "2026-02-08T06:30:21.615Z",
+      "createdAt": "2026-02-08T06:30:21.615Z",
+      "globalType": "header"
+    },
+    "footer": {
+      "id": 1,
+      "navItems": [],
+      "updatedAt": "2026-02-08T06:30:21.616Z",
+      "createdAt": "2026-02-08T06:30:21.616Z",
+      "globalType": "footer"
+    },
+    "siteSettings": {
+      "id": 1,
+      "name": "Johnny",
+      "fullName": "Johnny Lin",
+      "subtitle": "Software Engineer based in Singapore",
+      "profileImage": null,
+      "bio": "I'm currently studying Information Systems at Singapore Management University (SMU). I love building cloud-native applications and working on infrastructure. Explore my projects and experience below, or download my resume to learn more.",
+      "resumeUrl": "https://knl-personal.s3.ap-southeast-1.amazonaws.com/KaungNyanLin_Resume.pdf",
+      "githubUrl": "https://github.com/darkliyznyanlin910",
+      "linkedinUrl": "https://www.linkedin.com/in/kaung-nyan-lin/",
+      "emailAddress": "knyanlin@johnnyknl.com",
+      "updatedAt": "2026-02-08T06:30:21.677Z",
+      "createdAt": "2026-02-08T06:30:21.677Z",
+      "globalType": "site-settings"
+    }
+  }
+}
