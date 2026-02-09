@@ -5,6 +5,7 @@ import { PageRange } from '@/components/PageRange'
 import { Pagination } from '@/components/Pagination'
 import configPromise from '@payload-config'
 import { getPayload } from 'payload'
+import { NotebookPen } from 'lucide-react'
 import React from 'react'
 import PageClient from './page.client'
 
@@ -36,34 +37,50 @@ export default async function Page() {
         </div>
       </div>
 
-      <div className="container mb-8">
-        <PageRange
-          collection="posts"
-          currentPage={posts.page}
-          limit={12}
-          totalDocs={posts.totalDocs}
-        />
-      </div>
-
-      <div className="container">
-        <div className="flex flex-col gap-10 max-w-2xl">
-          {posts.docs.map((post) => (
-            <BlogEntry
-              key={post.id}
-              title={post.title}
-              slug={post.slug || ''}
-              description={post.meta?.description || null}
-              publishedAt={post.publishedAt || null}
+      {posts.docs.length > 0 ? (
+        <>
+          <div className="container mb-8">
+            <PageRange
+              collection="posts"
+              currentPage={posts.page}
+              limit={12}
+              totalDocs={posts.totalDocs}
             />
-          ))}
-        </div>
-      </div>
+          </div>
 
-      <div className="container mt-12">
-        {posts.totalPages > 1 && posts.page && (
-          <Pagination page={posts.page} totalPages={posts.totalPages} />
-        )}
-      </div>
+          <div className="container">
+            <div className="flex flex-col gap-10 max-w-2xl">
+              {posts.docs.map((post) => (
+                <BlogEntry
+                  key={post.id}
+                  title={post.title}
+                  slug={post.slug || ''}
+                  description={post.meta?.description || null}
+                  publishedAt={post.publishedAt || null}
+                />
+              ))}
+            </div>
+          </div>
+
+          <div className="container mt-12">
+            {posts.totalPages > 1 && posts.page && (
+              <Pagination page={posts.page} totalPages={posts.totalPages} />
+            )}
+          </div>
+        </>
+      ) : (
+        <div className="container">
+          <div className="flex flex-col items-center justify-center py-16 text-center">
+            <div className="rounded-full bg-muted p-4 mb-4">
+              <NotebookPen className="h-8 w-8 text-muted-foreground" />
+            </div>
+            <h2 className="text-lg font-semibold mb-1">No posts yet</h2>
+            <p className="text-sm text-muted-foreground">
+              New articles and thoughts will appear here. Stay tuned!
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

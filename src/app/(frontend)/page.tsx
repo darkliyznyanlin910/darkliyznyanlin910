@@ -8,9 +8,10 @@ import { getMediaUrl } from '@/utilities/getMediaUrl'
 import { getServerSideURL } from '@/utilities/getURL'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Github, Linkedin, Mail } from 'lucide-react'
+import { Github, Linkedin, Mail, FileText, NotebookPen } from 'lucide-react'
 import { BlogEntry } from '@/components/BlogEntry'
 import { WorkCard } from '@/components/WorkCard'
+import { ProjectsCard } from '@/components/ProjectsCard'
 import React from 'react'
 
 export const revalidate = 60
@@ -41,6 +42,14 @@ export default async function HomePage() {
     collection: 'experience',
     depth: 1,
     limit: 10,
+    sort: 'order',
+  })
+
+  // Fetch projects
+  const projects = await payload.find({
+    collection: 'projects',
+    depth: 1,
+    limit: 6,
     sort: 'order',
   })
 
@@ -90,7 +99,7 @@ export default async function HomePage() {
             </p>
           )}
 
-          {/* Social icons */}
+          {/* Social icons + View CV */}
           <div className="flex items-center gap-4 mt-6">
             {siteSettings.githubUrl && (
               <Link
@@ -123,15 +132,26 @@ export default async function HomePage() {
                 <Mail className="h-5 w-5" />
               </Link>
             )}
+            {siteSettings.resumeUrl && (
+              <Link
+                href={siteSettings.resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 ml-2 px-3 py-1.5 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors"
+              >
+                <FileText className="h-4 w-4" />
+                View Resume
+              </Link>
+            )}
           </div>
         </div>
       </section>
 
-      {/* Content: Blog posts + Work card */}
+      {/* Content: Blog posts + Experience/Projects cards */}
       <section className="container pb-24">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
-          {/* Left: Recent blog posts */}
-          <div className="lg:col-span-2">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-16 lg:gap-6">
+          {/* Posts */}
+          <div className="md:col-span-2 lg:col-span-1">
             {posts.docs.length > 0 && (
               <div className="flex flex-col gap-10">
                 {posts.docs.map((post) => (
@@ -147,19 +167,31 @@ export default async function HomePage() {
             )}
 
             {posts.docs.length === 0 && (
-              <p className="text-muted-foreground">No posts yet. Check back soon.</p>
+              <div className="flex flex-col items-center justify-center py-12 text-center">
+                <div className="rounded-full bg-muted p-3 mb-3">
+                  <NotebookPen className="h-6 w-6 text-muted-foreground" />
+                </div>
+                <p className="text-sm font-medium">No posts yet</p>
+                <p className="text-xs text-muted-foreground mt-1">
+                  New articles will appear here soon.
+                </p>
+              </div>
             )}
           </div>
 
-          {/* Right: Work card (sticky) */}
-          <div className="lg:col-span-1">
-            <div className="lg:sticky lg:top-24">
-              <WorkCard
-                experiences={experience.docs}
-                resumeUrl={siteSettings.resumeUrl}
-              />
+          {/* Experience card */}
+          <div className="md:col-span-1 lg:col-span-1">
+            <div className="md:sticky md:top-24 lg:static">
+              <WorkCard experiences={experience.docs} />
             </div>
           </div>
+
+          {/* Projects card */}
+          {projects.docs.length > 0 && (
+            <div className="md:col-span-3 lg:col-span-1">
+              <ProjectsCard projects={projects.docs} />
+            </div>
+          )}
         </div>
       </section>
     </main>

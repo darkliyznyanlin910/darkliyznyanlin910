@@ -1,22 +1,21 @@
 import type { Experience, Media } from '@/payload-types'
 import { getMediaUrl } from '@/utilities/getMediaUrl'
-import { Briefcase, ArrowRight } from 'lucide-react'
+import { Briefcase } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 interface WorkCardProps {
   experiences: Experience[]
-  resumeUrl?: string | null
 }
 
-export const WorkCard: React.FC<WorkCardProps> = ({ experiences, resumeUrl }) => {
+export const WorkCard: React.FC<WorkCardProps> = ({ experiences }) => {
   return (
     <div className="rounded-xl border border-border bg-card p-6">
       {/* Header */}
       <div className="flex items-center gap-2 mb-6">
         <Briefcase className="h-4 w-4 text-primary" />
-        <h2 className="text-sm font-semibold">Work</h2>
+        <h2 className="text-sm font-semibold">Experience</h2>
       </div>
 
       {/* Experience list */}
@@ -58,18 +57,12 @@ export const WorkCard: React.FC<WorkCardProps> = ({ experiences, resumeUrl }) =>
         })}
       </div>
 
-      {/* View CV link */}
-      {resumeUrl && (
-        <Link
-          href={resumeUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2 mt-6 w-full rounded-lg border border-primary/30 bg-primary/5 py-2.5 text-sm font-medium text-primary hover:bg-primary/10 transition-colors"
-        >
-          View CV
-          <ArrowRight className="h-3.5 w-3.5" />
-        </Link>
-      )}
+      <Link
+        href="/experience"
+        className="block mt-6 text-center text-xs text-muted-foreground hover:text-primary transition-colors"
+      >
+        View in detail &rarr;
+      </Link>
     </div>
   )
 }
