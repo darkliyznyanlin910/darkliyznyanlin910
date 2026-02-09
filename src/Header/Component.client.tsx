@@ -63,7 +63,8 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
 
   return (
     <nav
-      className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-1 px-3 py-2 rounded-full border border-primary/20 bg-background/80 backdrop-blur-xl shadow-lg shadow-primary/5"
+      className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-1 px-3 py-2 rounded-full border border-primary/30 bg-background/80 backdrop-blur-xl shadow-[0_0_15px_rgba(var(--primary),0.15),0_0_30px_rgba(var(--primary),0.08)]"
+      style={{ boxShadow: '0 0 15px color-mix(in oklch, var(--primary) 20%, transparent), 0 0 40px color-mix(in oklch, var(--primary) 10%, transparent)' }}
       {...(theme ? { 'data-theme': theme } : {})}
     >
       {links.map(({ href, label, icon: Icon }) => {

@@ -12,7 +12,7 @@ export async function Footer() {
 
   return (
     <footer className="mt-auto">
-      <div className="container py-6 flex justify-between items-center">
+      <div className="container pt-6 flex justify-between items-center pb-12">
         <p className="text-xs text-muted-foreground/70">
           &copy; {new Date().getFullYear()} Johnny Lin
         </p>
