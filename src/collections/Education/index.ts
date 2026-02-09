@@ -2,6 +2,10 @@ import type { CollectionConfig } from 'payload'
 
 import { anyone } from '../../access/anyone'
 import { authenticated } from '../../access/authenticated'
+import {
+  revalidateEducation,
+  revalidateEducationDelete,
+} from './hooks/revalidateEducation'
 
 export const Education: CollectionConfig = {
   slug: 'education',
@@ -74,5 +78,9 @@ export const Education: CollectionConfig = {
       },
     },
   ],
+  hooks: {
+    afterChange: [revalidateEducation],
+    afterDelete: [revalidateEducationDelete],
+  },
   timestamps: true,
 }

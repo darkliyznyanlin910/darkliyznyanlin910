@@ -2,6 +2,7 @@ import type { CollectionConfig } from 'payload'
 
 import { anyone } from '../../access/anyone'
 import { authenticated } from '../../access/authenticated'
+import { revalidateProject, revalidateProjectDelete } from './hooks/revalidateProjects'
 
 export const Projects: CollectionConfig = {
   slug: 'projects',
@@ -47,5 +48,9 @@ export const Projects: CollectionConfig = {
       },
     },
   ],
+  hooks: {
+    afterChange: [revalidateProject],
+    afterDelete: [revalidateProjectDelete],
+  },
   timestamps: true,
 }

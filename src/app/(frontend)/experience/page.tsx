@@ -5,8 +5,7 @@ import { getPayload } from 'payload'
 import { Timeline, type TimelineItem } from '@/components/Timeline'
 import React from 'react'
 
-export const dynamic = 'force-static'
-export const revalidate = 600
+export const revalidate = 60
 
 export default async function ExperiencePage() {
   const payload = await getPayload({ config: configPromise })
