@@ -11,8 +11,8 @@ export async function Footer() {
   const navItems = footerData?.navItems || []
 
   return (
-    <footer className="mt-auto border-t border-border/50 bg-background/80 backdrop-blur-sm">
-      <div className="container py-3 flex justify-between items-center">
+    <footer className="mt-auto">
+      <div className="container py-6 flex justify-between items-center">
         <p className="text-xs text-muted-foreground/70">
           &copy; {new Date().getFullYear()} Johnny Lin
         </p>

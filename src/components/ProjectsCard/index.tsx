@@ -73,7 +73,7 @@ export const ProjectsCard: React.FC<ProjectsCardProps> = ({ projects }) => {
         href="/projects"
         className="block mt-6 text-center text-xs text-muted-foreground hover:text-primary transition-colors"
       >
-        View all &rarr;
+        View in detail &rarr;
       </Link>
     </div>
   )

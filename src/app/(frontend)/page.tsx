@@ -147,52 +147,45 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Content: Blog posts + Experience/Projects cards */}
+      {/* Experience */}
+      {experience.docs.length > 0 && (
+        <section className="container pb-12">
+          <WorkCard experiences={experience.docs} />
+        </section>
+      )}
+
+      {/* Projects */}
+      {projects.docs.length > 0 && (
+        <section className="container pb-12">
+          <ProjectsCard projects={projects.docs} />
+        </section>
+      )}
+
+      {/* Posts */}
       <section className="container pb-24">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-16 lg:gap-6">
-          {/* Posts */}
-          <div className="md:col-span-2 lg:col-span-1">
-            {posts.docs.length > 0 && (
-              <div className="flex flex-col gap-10">
-                {posts.docs.map((post) => (
-                  <BlogEntry
-                    key={post.id}
-                    title={post.title}
-                    slug={post.slug || ''}
-                    description={post.meta?.description || null}
-                    publishedAt={post.publishedAt || null}
-                  />
-                ))}
-              </div>
-            )}
-
-            {posts.docs.length === 0 && (
-              <div className="flex flex-col items-center justify-center py-12 text-center">
-                <div className="rounded-full bg-muted p-3 mb-3">
-                  <NotebookPen className="h-6 w-6 text-muted-foreground" />
-                </div>
-                <p className="text-sm font-medium">No posts yet</p>
-                <p className="text-xs text-muted-foreground mt-1">
-                  New articles will appear here soon.
-                </p>
-              </div>
-            )}
+        {posts.docs.length > 0 ? (
+          <div className="flex flex-col gap-10">
+            {posts.docs.map((post) => (
+              <BlogEntry
+                key={post.id}
+                title={post.title}
+                slug={post.slug || ''}
+                description={post.meta?.description || null}
+                publishedAt={post.publishedAt || null}
+              />
+            ))}
           </div>
-
-          {/* Experience card */}
-          <div className="md:col-span-1 lg:col-span-1">
-            <div className="md:sticky md:top-24 lg:static">
-              <WorkCard experiences={experience.docs} />
+        ) : (
+          <div className="flex flex-col items-center justify-center py-12 text-center">
+            <div className="rounded-full bg-muted p-3 mb-3">
+              <NotebookPen className="h-6 w-6 text-muted-foreground" />
             </div>
+            <p className="text-sm font-medium">No posts yet</p>
+            <p className="text-xs text-muted-foreground mt-1">
+              New articles will appear here soon.
+            </p>
           </div>
-
-          {/* Projects card */}
-          {projects.docs.length > 0 && (
-            <div className="md:col-span-3 lg:col-span-1">
-              <ProjectsCard projects={projects.docs} />
-            </div>
-          )}
-        </div>
+        )}
       </section>
     </main>
   )
