@@ -29,26 +29,24 @@ export default async function Page() {
   })
 
   return (
-    <div className="pt-24 pb-24">
+    <main className="flex-1">
       <PageClient />
-      <div className="container mb-16">
-        <div className="prose dark:prose-invert max-w-none">
-          <h1>Posts</h1>
-        </div>
-      </div>
+      <div className="container pt-16 pb-24 md:pt-24">
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Posts</h1>
+        <p className="text-muted-foreground mb-12 max-w-2xl">
+          Articles, thoughts, and things I&apos;ve learned along the way.
+        </p>
 
-      {posts.docs.length > 0 ? (
-        <>
-          <div className="container mb-8">
+        {posts.docs.length > 0 ? (
+          <>
             <PageRange
+              className="text-muted-foreground mb-12"
               collection="posts"
               currentPage={posts.page}
               limit={12}
               totalDocs={posts.totalDocs}
             />
-          </div>
 
-          <div className="container">
             <div className="flex flex-col gap-10 max-w-2xl">
               {posts.docs.map((post) => (
                 <BlogEntry
@@ -60,16 +58,14 @@ export default async function Page() {
                 />
               ))}
             </div>
-          </div>
 
-          <div className="container mt-12">
             {posts.totalPages > 1 && posts.page && (
-              <Pagination page={posts.page} totalPages={posts.totalPages} />
+              <div className="mt-12">
+                <Pagination page={posts.page} totalPages={posts.totalPages} />
+              </div>
             )}
-          </div>
-        </>
-      ) : (
-        <div className="container">
+          </>
+        ) : (
           <div className="flex flex-col items-center justify-center py-16 text-center">
             <div className="rounded-full bg-muted p-4 mb-4">
               <NotebookPen className="h-8 w-8 text-muted-foreground" />
@@ -79,9 +75,9 @@ export default async function Page() {
               New articles and thoughts will appear here. Stay tuned!
             </p>
           </div>
-        </div>
-      )}
-    </div>
+        )}
+      </div>
+    </main>
   )
 }
 
