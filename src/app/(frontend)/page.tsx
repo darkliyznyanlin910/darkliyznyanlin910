@@ -6,7 +6,6 @@ import { getPayload } from 'payload'
 import { getCachedGlobal } from '@/utilities/getGlobals'
 import { getMediaUrl } from '@/utilities/getMediaUrl'
 import { getServerSideURL } from '@/utilities/getURL'
-import { mergeOpenGraph } from '@/utilities/mergeOpenGraph'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Github, Linkedin, Mail } from 'lucide-react'
@@ -173,6 +172,5 @@ export function generateMetadata(): Metadata {
     description:
       'Welcome to my portfolio website! Explore my projects, experience, and blog posts.',
     metadataBase: new URL(getServerSideURL()),
-    openGraph: mergeOpenGraph(),
   }
 }
