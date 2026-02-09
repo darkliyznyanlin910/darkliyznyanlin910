@@ -8,15 +8,13 @@ import { getServerSideURL } from './getURL'
 const getImageURL = (image?: Media | Config['db']['defaultIDType'] | null) => {
   const serverUrl = getServerSideURL()
 
-  let url = serverUrl + '/website-template-OG.webp'
-
   if (image && typeof image === 'object' && 'url' in image) {
     const ogUrl = image.sizes?.og?.url
-
-    url = ogUrl ? serverUrl + ogUrl : serverUrl + image.url
+    return ogUrl ? serverUrl + ogUrl : serverUrl + image.url
   }
 
-  return url
+  // Return null to let opengraph-image.tsx handle the default
+  return null
 }
 
 export const generateMeta = async (args: {
@@ -27,8 +25,8 @@ export const generateMeta = async (args: {
   const ogImage = getImageURL(doc?.meta?.image)
 
   const title = doc?.meta?.title
-    ? doc?.meta?.title + ' | Payload Website Template'
-    : 'Payload Website Template'
+    ? doc?.meta?.title + ' | Johnny Lin'
+    : 'Johnny Lin'
 
   return {
     description: doc?.meta?.description,
