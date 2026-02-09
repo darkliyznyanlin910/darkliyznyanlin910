@@ -23,7 +23,7 @@ export default async function ExperiencePage() {
     subtitle: exp.company,
     startDate: exp.startDate,
     endDate: exp.endDate,
-    link: exp.link,
+    links: exp.links?.map((l) => ({ label: l.label, customLabel: l.customLabel, url: l.url })) ?? null,
     logo: exp.logo,
     description: exp.description,
   }))

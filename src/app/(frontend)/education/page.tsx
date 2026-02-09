@@ -23,7 +23,7 @@ export default async function EducationPage() {
     subtitle: edu.institution,
     startDate: edu.startDate,
     endDate: edu.endDate,
-    link: edu.link,
+    links: edu.links?.map((l) => ({ label: l.label, customLabel: l.customLabel, url: l.url })) ?? null,
     logo: edu.logo,
     description: edu.description,
   }))

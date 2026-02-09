@@ -3,8 +3,15 @@ import { getMediaUrl } from '@/utilities/getMediaUrl'
 import Image from 'next/image'
 import Link from 'next/link'
 import RichText from '@/components/RichText'
+import { LinkIcon, getLinkLabel } from '@/components/LinkIcon'
 import type { DefaultTypedEditorState } from '@payloadcms/richtext-lexical'
 import React from 'react'
+
+export interface TimelineLink {
+  label: string
+  customLabel?: string | null
+  url: string
+}
 
 export interface TimelineItem {
   id: number
@@ -12,7 +19,7 @@ export interface TimelineItem {
   subtitle: string
   startDate: string
   endDate?: string | null
-  link?: string | null
+  links?: TimelineLink[] | null
   logo?: (number | null) | Media
   description?: DefaultTypedEditorState | null
 }
@@ -53,24 +60,30 @@ export const Timeline: React.FC<TimelineProps> = ({ items }) => {
               {/* Content */}
               <div className="flex flex-col gap-1">
                 <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
-                  {item.link ? (
-                    <Link
-                      href={item.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-lg font-semibold hover:text-primary transition-colors"
-                    >
-                      {item.title}
-                    </Link>
-                  ) : (
-                    <h3 className="text-lg font-semibold">{item.title}</h3>
-                  )}
+                  <h3 className="text-lg font-semibold">{item.title}</h3>
                   <span className="text-sm text-muted-foreground whitespace-nowrap">
                     {item.startDate} &mdash; {item.endDate || 'Present'}
                   </span>
                 </div>
 
                 <p className="text-muted-foreground">{item.subtitle}</p>
+
+                {item.links && item.links.length > 0 && (
+                  <div className="flex flex-wrap gap-2 mt-1">
+                    {item.links.map((link, idx) => (
+                      <Link
+                        key={idx}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-full border border-border bg-muted/50 text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors"
+                      >
+                        <LinkIcon label={link.label} className="w-3 h-3" />
+                        {getLinkLabel(link.label, link.customLabel)}
+                      </Link>
+                    ))}
+                  </div>
+                )}
 
                 {item.description && (
                   <div className="mt-3">

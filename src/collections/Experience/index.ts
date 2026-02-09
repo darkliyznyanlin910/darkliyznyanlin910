@@ -37,11 +37,41 @@ export const Experience: CollectionConfig = {
       },
     },
     {
-      name: 'link',
-      type: 'text',
+      name: 'links',
+      type: 'array',
       admin: {
-        description: 'URL to the company website',
+        description: 'External links for this entry',
       },
+      fields: [
+        {
+          name: 'label',
+          type: 'select',
+          required: true,
+          options: [
+            { label: 'GitHub', value: 'github' },
+            { label: 'Demo', value: 'demo' },
+            { label: 'LinkedIn', value: 'linkedin' },
+            { label: 'Website', value: 'website' },
+            { label: 'Other', value: 'other' },
+          ],
+        },
+        {
+          name: 'customLabel',
+          type: 'text',
+          admin: {
+            condition: (_, siblingData) => siblingData?.label === 'other',
+            description: 'Custom label when "Other" is selected',
+          },
+        },
+        {
+          name: 'url',
+          type: 'text',
+          required: true,
+          admin: {
+            description: 'Full URL',
+          },
+        },
+      ],
     },
     {
       name: 'startDate',

@@ -811,9 +811,30 @@ export interface Project {
   } | null;
   image?: (number | null) | Media;
   /**
-   * External URL for the project
+   * External links for this project
    */
-  link?: string | null;
+  links?:
+    | {
+        label: 'github' | 'demo' | 'linkedin' | 'website' | 'other';
+        /**
+         * Custom label when "Other" is selected
+         */
+        customLabel?: string | null;
+        /**
+         * Full URL
+         */
+        url: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * e.g. "Jan 2024"
+   */
+  startDate: string;
+  /**
+   * e.g. "Jun 2024" or "Present"
+   */
+  endDate?: string | null;
   /**
    * Lower numbers appear first
    */
@@ -836,9 +857,22 @@ export interface Education {
    */
   institution: string;
   /**
-   * URL to the institution or program page
+   * External links for this entry
    */
-  link?: string | null;
+  links?:
+    | {
+        label: 'github' | 'demo' | 'linkedin' | 'website' | 'other';
+        /**
+         * Custom label when "Other" is selected
+         */
+        customLabel?: string | null;
+        /**
+         * Full URL
+         */
+        url: string;
+        id?: string | null;
+      }[]
+    | null;
   /**
    * e.g. "Aug 2023"
    */
@@ -885,9 +919,22 @@ export interface Experience {
    */
   company: string;
   /**
-   * URL to the company website
+   * External links for this entry
    */
-  link?: string | null;
+  links?:
+    | {
+        label: 'github' | 'demo' | 'linkedin' | 'website' | 'other';
+        /**
+         * Custom label when "Other" is selected
+         */
+        customLabel?: string | null;
+        /**
+         * Full URL
+         */
+        url: string;
+        id?: string | null;
+      }[]
+    | null;
   /**
    * e.g. "Mar 2024"
    */
@@ -1515,7 +1562,16 @@ export interface ProjectsSelect<T extends boolean = true> {
   title?: T;
   description?: T;
   image?: T;
-  link?: T;
+  links?:
+    | T
+    | {
+        label?: T;
+        customLabel?: T;
+        url?: T;
+        id?: T;
+      };
+  startDate?: T;
+  endDate?: T;
   order?: T;
   updatedAt?: T;
   createdAt?: T;
@@ -1527,7 +1583,14 @@ export interface ProjectsSelect<T extends boolean = true> {
 export interface EducationSelect<T extends boolean = true> {
   title?: T;
   institution?: T;
-  link?: T;
+  links?:
+    | T
+    | {
+        label?: T;
+        customLabel?: T;
+        url?: T;
+        id?: T;
+      };
   startDate?: T;
   endDate?: T;
   logo?: T;
@@ -1543,7 +1606,14 @@ export interface EducationSelect<T extends boolean = true> {
 export interface ExperienceSelect<T extends boolean = true> {
   title?: T;
   company?: T;
-  link?: T;
+  links?:
+    | T
+    | {
+        label?: T;
+        customLabel?: T;
+        url?: T;
+        id?: T;
+      };
   startDate?: T;
   endDate?: T;
   logo?: T;

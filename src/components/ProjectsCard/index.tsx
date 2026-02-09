@@ -61,15 +61,9 @@ export const ProjectsCard: React.FC<ProjectsCardProps> = ({ projects }) => {
           )
 
           return (
-            <Link
-              key={project.id}
-              href={project.link || '/projects'}
-              target={project.link ? '_blank' : undefined}
-              rel={project.link ? 'noopener noreferrer' : undefined}
-              className="hover:opacity-80 transition-opacity"
-            >
+            <div key={project.id}>
               {content}
-            </Link>
+            </div>
           )
         })}
       </div>
