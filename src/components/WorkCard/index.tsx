@@ -42,16 +42,16 @@ export const WorkCard: React.FC<WorkCardProps> = ({ experiences }) => {
                 )}
               </div>
 
-              {/* Info */}
+              {/* Info + Date */}
               <div className="flex-1 min-w-0">
-                <p className="text-sm font-medium truncate">{exp.company}</p>
+                <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-0 sm:gap-2">
+                  <p className="text-sm font-medium truncate">{exp.company}</p>
+                  <span className="text-xs text-muted-foreground whitespace-nowrap shrink-0">
+                    {exp.startDate} &mdash; {exp.endDate || 'Present'}
+                  </span>
+                </div>
                 <p className="text-xs text-muted-foreground truncate">{exp.title}</p>
               </div>
-
-              {/* Date */}
-              <span className="text-xs text-muted-foreground whitespace-nowrap shrink-0">
-                {exp.startDate} &mdash; {exp.endDate || 'Present'}
-              </span>
             </div>
           )
         })}

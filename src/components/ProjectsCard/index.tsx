@@ -45,9 +45,16 @@ export const ProjectsCard: React.FC<ProjectsCardProps> = ({ projects }) => {
                 )}
               </div>
 
-              {/* Info */}
+              {/* Info + Date */}
               <div className="flex-1 min-w-0">
-                <p className="text-sm font-medium truncate">{project.title}</p>
+                <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-0 sm:gap-2">
+                  <p className="text-sm font-medium truncate">{project.title}</p>
+                  {project.startDate && (
+                    <span className="text-xs text-muted-foreground whitespace-nowrap shrink-0">
+                      {project.startDate} &mdash; {project.endDate || 'Present'}
+                    </span>
+                  )}
+                </div>
                 {project.description && (
                   <RichText
                     data={project.description}

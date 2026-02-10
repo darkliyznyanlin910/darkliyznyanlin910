@@ -44,7 +44,7 @@ export const SiteSettings: GlobalConfig = {
     },
     {
       name: 'bio',
-      type: 'textarea',
+      type: 'richText',
       admin: {
         description: 'Intro paragraph on the home page',
       },

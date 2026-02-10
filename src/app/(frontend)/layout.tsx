@@ -16,6 +16,7 @@ import { draftMode } from 'next/headers'
 
 import './globals.css'
 import { getServerSideURL } from '@/utilities/getURL'
+import { DotPattern } from '@/components/background/dot-pattern'
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const { isEnabled } = await draftMode()
@@ -28,7 +29,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <link href="/favicon.svg" rel="icon" type="image/svg+xml" />
       </head>
       <body>
-        <div className="fixed inset-0 -z-10 h-full w-full bg-background" />
+        <DotPattern className="-z-10 bg-background" dotSize={1.5} gap={28} />
         <Providers>
           <AdminBar
             adminBarProps={{
