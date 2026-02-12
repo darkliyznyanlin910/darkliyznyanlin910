@@ -10,8 +10,9 @@ export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 export const revalidate = 60
 
-export default async function Image({ params }: { params: { slug: string } }) {
-  const decodedSlug = decodeURIComponent(params.slug)
+export default async function Image({ params: paramsPromise }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await paramsPromise
+  const decodedSlug = decodeURIComponent(slug)
   const payload = await getPayload({ config: configPromise })
 
   const result = await payload.find({
