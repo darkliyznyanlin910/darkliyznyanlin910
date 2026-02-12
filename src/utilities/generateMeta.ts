@@ -24,14 +24,19 @@ export const generateMeta = async (args: {
 
   const ogImage = getImageURL(doc?.meta?.image)
 
+  const docTitle = 'title' in (doc ?? {}) ? (doc as Post).title : undefined
   const title = doc?.meta?.title
-    ? doc?.meta?.title + ' | Johnny Lin'
-    : 'Johnny Lin'
+    ? doc.meta.title + ' | Johnny Lin'
+    : docTitle
+      ? docTitle + ' | Johnny Lin'
+      : 'Johnny Lin'
+
+  const description = doc?.meta?.description || ''
 
   return {
-    description: doc?.meta?.description,
+    description,
     openGraph: mergeOpenGraph({
-      description: doc?.meta?.description || '',
+      description,
       ...(ogImage
         ? {
             images: [{ url: ogImage }],
@@ -43,7 +48,7 @@ export const generateMeta = async (args: {
     twitter: {
       card: 'summary_large_image',
       title,
-      description: doc?.meta?.description || '',
+      description,
     },
     title,
   }
