@@ -40,6 +40,11 @@ export const generateMeta = async (args: {
       title,
       url: Array.isArray(doc?.slug) ? doc?.slug.join('/') : '/',
     }),
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description: doc?.meta?.description || '',
+    },
     title,
   }
 }
