@@ -51,8 +51,11 @@ function createJsxConverters(
             const heading = headings.find((h) => h.text === text.trim())
             const Tag = tag as keyof JSX.IntrinsicElements
             return (
-              <Tag id={heading?.id} key={heading?.id}>
-                {nodesToJSX({ nodes: (node as any).children })}
+              <Tag id={heading?.id} key={heading?.id} className="group scroll-mt-24">
+                <a href={`#${heading?.id}`} className="no-underline hover:underline">
+                  {nodesToJSX({ nodes: (node as any).children })}
+                  <span className="ml-2 opacity-0 group-hover:opacity-50 transition-opacity">#</span>
+                </a>
               </Tag>
             )
           },
