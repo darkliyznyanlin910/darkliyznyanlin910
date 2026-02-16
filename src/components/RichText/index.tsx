@@ -21,6 +21,8 @@ import type {
 import { BannerBlock } from '@/blocks/Banner/Component'
 import { CallToActionBlock } from '@/blocks/CallToAction/Component'
 import { cn } from '@/utilities/ui'
+import type { TOCHeading } from '@/utilities/extractHeadings'
+import type { JSX } from 'react'
 
 type NodeTypes =
   | DefaultNodeTypes
@@ -35,37 +37,63 @@ const internalDocToHref = ({ linkNode }: { linkNode: SerializedLinkNode }) => {
   return relationTo === 'posts' ? `/posts/${slug}` : `/${slug}`
 }
 
-const jsxConverters: JSXConvertersFunction<NodeTypes> = ({ defaultConverters }) => ({
-  ...defaultConverters,
-  ...LinkJSXConverter({ internalDocToHref }),
-  blocks: {
-    banner: ({ node }) => <BannerBlock className="col-start-2 mb-4" {...node.fields} />,
-    mediaBlock: ({ node }) => (
-      <MediaBlock
-        className="col-start-1 col-span-3"
-        imgClassName="m-0"
-        {...node.fields}
-        captionClassName="mx-auto max-w-[48rem]"
-        enableGutter={false}
-        disableInnerContainer={true}
-      />
-    ),
-    code: ({ node }) => <CodeBlock className="col-start-2" {...node.fields} />,
-    cta: ({ node }) => <CallToActionBlock {...node.fields} />,
-  },
-})
+function createJsxConverters(
+  headings?: TOCHeading[],
+): JSXConvertersFunction<NodeTypes> {
+  return ({ defaultConverters }) => ({
+    ...defaultConverters,
+    ...LinkJSXConverter({ internalDocToHref }),
+    ...(headings && headings.length > 0
+      ? {
+          heading: ({ node, nodesToJSX }) => {
+            const tag = (node as any).tag as string
+            const text = extractTextFromNode(node)
+            const heading = headings.find((h) => h.text === text.trim())
+            const Tag = tag as keyof JSX.IntrinsicElements
+            return (
+              <Tag id={heading?.id} key={heading?.id}>
+                {nodesToJSX({ nodes: (node as any).children })}
+              </Tag>
+            )
+          },
+        }
+      : {}),
+    blocks: {
+      banner: ({ node }) => <BannerBlock className="col-start-2 mb-4" {...node.fields} />,
+      mediaBlock: ({ node }) => (
+        <MediaBlock
+          className="col-start-1 col-span-3"
+          imgClassName="m-0"
+          {...node.fields}
+          captionClassName="mx-auto max-w-[48rem]"
+          enableGutter={false}
+          disableInnerContainer={true}
+        />
+      ),
+      code: ({ node }) => <CodeBlock className="col-start-2" {...node.fields} />,
+      cta: ({ node }) => <CallToActionBlock {...node.fields} />,
+    },
+  })
+}
+
+function extractTextFromNode(node: any): string {
+  if (node.type === 'text') return node.text ?? ''
+  if (node.children) return node.children.map(extractTextFromNode).join('')
+  return ''
+}
 
 type Props = {
   data: DefaultTypedEditorState
   enableGutter?: boolean
   enableProse?: boolean
+  headings?: TOCHeading[]
 } & React.HTMLAttributes<HTMLDivElement>
 
 export default function RichText(props: Props) {
-  const { className, enableProse = true, enableGutter = true, ...rest } = props
+  const { className, enableProse = true, enableGutter = true, headings, ...rest } = props
   return (
     <ConvertRichText
-      converters={jsxConverters}
+      converters={createJsxConverters(headings)}
       className={cn(
         'payload-richtext',
         {

@@ -14,6 +14,8 @@ import { PostHero } from '@/heros/PostHero'
 import { generateMeta } from '@/utilities/generateMeta'
 import PageClient from './page.client'
 import { LivePreviewListener } from '@/components/LivePreviewListener'
+import { extractHeadings } from '@/utilities/extractHeadings'
+import { TableOfContents } from '@/components/TableOfContents'
 
 export async function generateStaticParams() {
   const payload = await getPayload({ config: configPromise })
@@ -51,6 +53,8 @@ export default async function Post({ params: paramsPromise }: Args) {
 
   if (!post) return <PayloadRedirects url={url} />
 
+  const headings = extractHeadings(post.content)
+
   return (
     <article className="pt-16 pb-16">
       <PageClient />
@@ -62,15 +66,24 @@ export default async function Post({ params: paramsPromise }: Args) {
 
       <PostHero post={post} />
 
-      <div className="flex flex-col items-center gap-4 pt-8">
-        <div className="container">
-          <RichText className="max-w-[48rem] mx-auto" data={post.content} enableGutter={false} />
-          {post.relatedPosts && post.relatedPosts.length > 0 && (
-            <RelatedPosts
-              className="mt-12 max-w-[52rem] lg:grid lg:grid-cols-subgrid col-start-1 col-span-3 grid-rows-[2fr]"
-              docs={post.relatedPosts.filter((post) => typeof post === 'object')}
+      <div className="relative pt-8">
+        <div className="mx-auto max-w-7xl px-6 xl:grid xl:grid-cols-[1fr_minmax(0,48rem)_1fr] xl:gap-8">
+          <div />
+          <div>
+            <RichText
+              className="max-w-none"
+              data={post.content}
+              enableGutter={false}
+              headings={headings}
             />
-          )}
+            {post.relatedPosts && post.relatedPosts.length > 0 && (
+              <RelatedPosts
+                className="mt-12"
+                docs={post.relatedPosts.filter((post) => typeof post === 'object')}
+              />
+            )}
+          </div>
+          <TableOfContents headings={headings} />
         </div>
       </div>
     </article>
