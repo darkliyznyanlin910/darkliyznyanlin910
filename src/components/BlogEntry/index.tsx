@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import React from 'react'
+import { CategoryPill } from '@/components/CategoryPill'
 
 interface BlogEntryProps {
   title: string
   slug: string
   description?: string | null
   publishedAt?: string | null
+  categories?: { title: string; slug: string }[]
 }
 
 export const BlogEntry: React.FC<BlogEntryProps> = ({
@@ -13,6 +15,7 @@ export const BlogEntry: React.FC<BlogEntryProps> = ({
   slug,
   description,
   publishedAt,
+  categories,
 }) => {
   const formattedDate = publishedAt
     ? new Date(publishedAt).toLocaleDateString('en-US', {
@@ -34,13 +37,21 @@ export const BlogEntry: React.FC<BlogEntryProps> = ({
         </div>
       </div>
 
-      <div className="mt-2 ml-[calc(0.125rem+0.75rem)]">
+      <div className="mt-2 ml-3.5">
         <h3 className="text-base font-semibold group-hover:text-primary transition-colors">
           <Link href={`/posts/${slug}`}>{title}</Link>
         </h3>
 
         {description && (
           <p className="mt-1 text-sm text-muted-foreground line-clamp-2">{description}</p>
+        )}
+
+        {categories && categories.length > 0 && (
+          <div className="flex flex-wrap gap-1.5 mt-2">
+            {categories.map((cat) => (
+              <CategoryPill key={cat.slug} title={cat.title} slug={cat.slug} />
+            ))}
+          </div>
         )}
 
         <Link
