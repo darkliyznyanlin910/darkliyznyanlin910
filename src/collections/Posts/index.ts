@@ -1,12 +1,15 @@
 import type { CollectionConfig } from 'payload'
 
 import {
+  BlockquoteFeature,
   BlocksFeature,
   EXPERIMENTAL_TableFeature,
   FixedToolbarFeature,
   HeadingFeature,
   HorizontalRuleFeature,
   InlineToolbarFeature,
+  OrderedListFeature,
+  UnorderedListFeature,
   lexicalEditor,
 } from '@payloadcms/richtext-lexical'
 
@@ -94,6 +97,9 @@ export const Posts: CollectionConfig<'posts'> = {
                     FixedToolbarFeature(),
                     InlineToolbarFeature(),
                     HorizontalRuleFeature(),
+                    UnorderedListFeature(),
+                    OrderedListFeature(),
+                    BlockquoteFeature(),
                     EXPERIMENTAL_TableFeature(),
                   ]
                 },
